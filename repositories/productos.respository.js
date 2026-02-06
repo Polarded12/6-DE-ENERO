@@ -16,11 +16,11 @@ class ProductosRepository {
     }
 
     update(id, producto) {
-        const producto= this.getById(id);
-        if (producto) {
-            producto.nombre = producto.nombre || producto.nombre;
-            producto.precio = producto.precio || producto.precio;
-            return producto;
+        const Producto = this.getById(id);
+        if (Producto) {
+            const index = this.productos.findIndex((p) => p.id === id);
+            this.productos[index] = { ...Producto, ...producto };
+            return this.productos[index];
         }
        
     }
@@ -34,4 +34,4 @@ class ProductosRepository {
     }
 }
 
-module.exports = ProductosRepository;
+module.exports = { ProductosRepository };

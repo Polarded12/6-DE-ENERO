@@ -43,7 +43,7 @@ function update(req,res){
     return res.json(actualizado)
 }
 
-function remove(req,res){
+function deleteProducto(req,res){
     const id = Number(req.params.id)
     const ok = repo.delete(id)
     if(!ok){
@@ -57,6 +57,6 @@ module.exports = {
     getById,
     create,
     update,
-    remove
+    deleteProducto
 }
 
