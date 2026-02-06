@@ -1,0 +1,24 @@
+{
+  "name": "6-de-febrero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polarded12/6-DE-ENERO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Polarded12/6-DE-ENERO/issues"
+  },
+  "homepage": "https://github.com/Polarded12/6-DE-ENERO#readme",
+  "dependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
